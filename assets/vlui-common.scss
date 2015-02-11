@@ -44,6 +44,11 @@ a.debug {
   // }
 }
 
+a.disabled {
+  cursor: not-allowed;
+  color: #bbb;
+}
+
 textarea {
   width: 100%;
 }
@@ -112,6 +117,12 @@ h4 {
 
 .flex-root{
   overflow: scroll;
+}
+
+.popup-menu {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 /* PANES */
@@ -394,7 +405,7 @@ $pill-bg-color: #eee;
   height: $pill-height;
   line-height: $pill-height;
 
-  cursor: default;
+  cursor: pointer;
 
   .field-name{
     overflow-x: hidden;
@@ -410,9 +421,13 @@ $pill-bg-color: #eee;
     flex-grow: 0;
   }
 
-  .caret {
-    flex-grow: 0;
-    margin: auto 0;
+  .fa {
+    margin-top: 4px;
+    opacity: 0.5;
+  }
+
+  &.expanded .fa, &:hover .fa{
+    opacity: 1;
   }
 }
 
@@ -423,4 +438,15 @@ $pill-bg-color: #eee;
 
 .draggable {
   cursor: move;
+}
+
+
+/**** Components ****/
+
+.controls {
+  display: inline;
+  margin-right: 100px;
+  a {
+    margin: 0 10px;
+  }
 }
