@@ -119,26 +119,6 @@ h4 {
   overflow: scroll;
 }
 
-/* tooltip */
-
-.tooltip {
-  position: absolute;
-  color: #fff;
-  background: #000;
-  border-radius: 3px;
-  padding: 3px;
-  display: inline-block;
-}
-
-.tooltip.ng-enter {
-  opacity: 0;
-  transition: opacity 0.25s;
-}
-
-.tooltip.ng-enter-active {
-  opacity: 1;
-}
-
 .popup-menu {
   background-color: white;
   border: 1px solid #ccc;
