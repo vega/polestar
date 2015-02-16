@@ -43,6 +43,9 @@ angular.module('vleApp')
             // if pill is dragged from another shelf, not the schemalist
             updateFieldDef(enc[etDragFrom], pills[etDragFrom] || {});
           }
+          if (enc[etDragTo] === undefined) {
+            enc[etDragTo] = {};
+          }
           updateFieldDef(enc[etDragTo], pills[etDragTo] || {});
 
           // console.log('pills.dragDrop',
