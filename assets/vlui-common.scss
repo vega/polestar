@@ -34,6 +34,10 @@ a:hover {
   cursor: move;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 a:active, a:hover {
   outline: 0;
 }
@@ -47,6 +51,10 @@ a {
   font-style: italic;
 }
 
+a.disabled {
+  cursor: not-allowed;
+  color: #ccc;
+}
 
 a.command {
   margin-left: 10px;
@@ -59,7 +67,6 @@ a.command {
     color: #ccc;
     display:none;
   }
-
 }
 
 textarea {
@@ -137,6 +144,12 @@ h4 {
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 3px;
+
+  &.popup-command {
+    .command {
+      display: block;
+    }
+  }
 }
 
 /* PANES */
@@ -168,6 +181,7 @@ h4 {
   min-height: 150px;
   height: 300px;
   flex-grow: 0.5;
+  background-color: #EEE;
 }
 
 .alert-box {
@@ -378,10 +392,10 @@ h4 {
 /**** Components ****/
 
 .controls {
-  display: inline;
-  margin-right: 100px;
+  margin-right: 150px;
+  margin-top: 10px;
   a {
-    margin: 0 10px;
+    margin: 10px;
   }
 }
 
