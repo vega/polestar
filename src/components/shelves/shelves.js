@@ -8,7 +8,7 @@ angular.module('polestar')
       restrict: 'E',
       scope: {},
       replace: true,
-      controller: function($scope, vl, Spec, Config, Dataset, Logger, Pills) {
+      controller: function($scope, $timeout, vl, Spec, Config, Dataset, Logger, Pills) {
         $scope.Spec = Spec;
         $scope.schema = vl.schema.schema;
         $scope.pills = Pills;
@@ -16,6 +16,21 @@ angular.module('polestar')
         // $scope.markChange = function() {
         //   Logger.logInteraction(Logger.actions.MARK_CHANGE, Spec.spec.marktype);
         // };
+
+        $timeout(function(){
+          var marktypePop = new Drop({
+          content: document.querySelector('.marktypePop-content'), 
+          target: document.querySelector('.marktypePop-target'),
+          position: 'bottom left',
+          openOn: 'click'
+          });  
+
+          $scope.markChange = function(marktype) {
+          Spec.spec.marktype = marktype;
+          Logger.logInteraction(Logger.actions.MARK_CHANGE, Spec.spec.marktype);
+          marktypePop.close();
+        };
+        },0);
 
         $scope.marktypeicons = {
           'point': {marktype: 'point', icon: 'fa fa-circle-o'}, 
@@ -26,19 +41,7 @@ angular.module('polestar')
           'text': {marktype: 'text', icon: 'fa fa-table'}
         };
 
-        // $scope.marktypeicons = [
-        //   {marktype: 'point', icon: 'fa fa-circle-o'}, 
-        //   {marktype: 'tick', icon: 'fa fa-square'},
-        //   {marktype: 'bar', icon: 'fa fa-bar-chart'},
-        //   {marktype: 'line', icon: 'fa fa-line-chart'},
-        //   {marktype: 'area', icon: 'fa fa-area-chart'},
-        //   {marktype: 'text', icon: 'fa fa-table'}];
-
-        $scope.markChange = function(marktype) {
-          Spec.spec.marktype = marktype;
-          Logger.logInteraction(Logger.actions.MARK_CHANGE, Spec.spec.marktype);
-          $scope.marktypedropdown = false;
-        }
+        
 
         $scope.transpose = function(){
           vl.Encoding.transpose(Spec.spec);

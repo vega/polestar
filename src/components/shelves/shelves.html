@@ -35,10 +35,11 @@
               ng-options="type for type in ['point', 'tick', 'bar', 'line', 'area', 'text']"
               ng-change="markChange()"></select> -->
       
-      <div ng-model="marktypedropdown" ng-click="marktypedropdown=!marktypedropdown" ng-init="marktypedropdown=false">
+      <div class="marktypePop-target">
           <i class="{{marktypeicons[Spec.spec.marktype].icon}}"></i> {{Spec.spec.marktype}} <i class="fa fa-caret-down"></i>
       </div>
-      <div ng-show="marktypedropdown">
+
+      <div class="marktypePop-content popup-menu">
         <div ng-repeat="option in marktypeicons"
           ng-click="markChange(option.marktype)">
           <i class="{{option.icon}}"></i> {{option.marktype}}
