@@ -1,3 +1,26 @@
 .shelf-pane {
   margin-bottom: 20px;
 }
+
+.marktypePop-target {
+	color: #38425D;
+	cursor: pointer;
+
+	.fa-caret-down {
+		opacity: 0.5;
+	}
+	&:hover .fa-caret-down {
+		opacity: 1;
+	}
+}
+
+.marktypePop-content {
+	background-color: #38425D;
+	color: white;
+	cursor: pointer;
+	border: 0;
+
+	.option:hover {
+		color: #ccc;
+	}
+}
