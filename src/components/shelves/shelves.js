@@ -33,8 +33,8 @@ angular.module('polestar')
         },0);
 
         $scope.marktypeicons = {
-          'point': {marktype: 'point', icon: 'fa fa-circle-o'}, 
-          'tick': {marktype: 'tick', icon: 'fa fa-square'},
+          'point': {marktype: 'point', icon: 'icon-point-2'}, 
+          'tick': {marktype: 'tick', icon: 'icon-tick-5'},
           'bar': {marktype: 'bar', icon: 'fa fa-bar-chart'},
           'line': {marktype: 'line', icon: 'fa fa-line-chart'},
           'area': {marktype: 'area', icon: 'fa fa-area-chart'},
