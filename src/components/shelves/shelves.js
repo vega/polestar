@@ -13,10 +13,6 @@ angular.module('polestar')
         $scope.schema = vl.schema.schema;
         $scope.pills = Pills;
 
-        // $scope.markChange = function() {
-        //   Logger.logInteraction(Logger.actions.MARK_CHANGE, Spec.spec.marktype);
-        // };
-
         $timeout(function(){
           var marktypePop = new Drop({
           content: document.querySelector('.marktypePop-content'), 
@@ -40,8 +36,6 @@ angular.module('polestar')
           'area': {marktype: 'area', icon: 'fa fa-area-chart'},
           'text': {marktype: 'text', icon: 'fa fa-table'}
         };
-
-        
 
         $scope.transpose = function(){
           vl.Encoding.transpose(Spec.spec);

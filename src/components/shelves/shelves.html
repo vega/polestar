@@ -29,25 +29,15 @@
   </div>
   <div class="shelf-pane shelf-marks-pane full-width">
     <div class="right">
-      
-      <!-- 
-      <select class="markselect" ng-model="Spec.spec.marktype"
-              ng-options="type for type in ['point', 'tick', 'bar', 'line', 'area', 'text']"
-              ng-change="markChange()"></select> -->
-      
       <div class="marktypePop-target">
           <i class="{{marktypeicons[Spec.spec.marktype].icon}}"></i> {{Spec.spec.marktype}} <i class="fa fa-caret-down"></i>
       </div>
-
-      
-
       <div class="marktypePop-content popup-menu">
         <div ng-repeat="option in marktypeicons"
           ng-click="markChange(option.marktype)" class="option">
           <i class="{{option.icon}}"></i> {{option.marktype}}
         </div>
       </div>
-              
     </div>
     <h3>Marks</h3>
 
