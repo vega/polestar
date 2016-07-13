@@ -1,7 +1,0 @@
-# pack-refs with: peeled fully-peeled 
-b8af3347b4404436a76b10d1b0ebdef09c588852 refs/remotes/origin/dom/158-initialize-if-undefined
-94722123962f908faa12a58f86072969664921be refs/remotes/origin/gh-pages
-f7b66386fe2b8b1bb75c6bc2af3b0a3b870f9a84 refs/remotes/origin/kw/fieldDef
-1d406de35572d93b13e8a076470bd6fe77c9abf0 refs/remotes/origin/kw/test
-cf10a9ecf10022c9ae27f698eab09349c1774f28 refs/remotes/origin/kw/util
-102c190b18d42e1f38b28f2643c5fb2f7d2fc765 refs/remotes/origin/master
