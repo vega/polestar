@@ -31,6 +31,7 @@ angular.module('polestar')
       /** @type {Object} verbose spec edited by the UI */
       spec: null,
       chart: Chart.getChart(null),
+      isEmptyPlot: true,
       isSpecific: true // Polestar always have specific spec (except for mark)
     };
 
@@ -153,6 +154,8 @@ angular.module('polestar')
         if (!Dataset.schema) { return Spec; }
 
         var query = Spec.cleanQuery = getQuery(spec);
+        Spec.isEmptyPlot = query.spec.encodings.length === 0;
+
         if (_.isEqual(query, Spec.oldCleanQuery)) {
           return Spec; // no need to update charts
         }

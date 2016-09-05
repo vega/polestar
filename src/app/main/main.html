@@ -60,20 +60,25 @@
 
     <div class="pane vis-pane">
       <vl-plot-group class="card abs-100 no-top-margin no-right-margin full-vl-plot-group"
-          chart="Spec.chart"
-          show-bookmark="true"
-          show-axis-prop="true"
-          show-mark-type="true"
-          show-sort="true"
-          show-transpose="true"
-          toggle-shelf="true"
-          config-set="large"
+        ng-show="!Spec.isEmptyPlot"
+        chart="Spec.chart"
+        show-bookmark="true"
+        show-axis-prop="true"
+        show-mark-type="true"
+        show-sort="true"
+        show-transpose="true"
+        toggle-shelf="true"
+        config-set="large"
 
-          show-label="true"
-          tooltip="true"
+        show-label="true"
+        tooltip="true"
 
-          always-scrollable="true"
-          ></vl-plot-group>
+        always-scrollable="true"
+      ></vl-plot-group>
+      <div class="abs-100 empty-vis card no-top-margin" ng-show="Spec.isEmptyPlot">
+        No specified visualization yet.  Start exploring by dragging a field to
+        encoding pane on the left.
+      </div>
     </div>
   </div>
 
