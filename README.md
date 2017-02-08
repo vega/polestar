@@ -4,7 +4,7 @@
 
 PoleStar is Tableau-style User Interface for visual analysis, building on top
 of [Vega-Lite](https://github.com/vega/vega-lite). Try our [online
-demo](http://vega.github.io/polestar/). Also, be sure to check out [related
+demo](http://vega.github.io/polestar/). Also, be sure to check our [related
 projects](https://vega.github.io/).
 
 **This project is an [alpha](http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha) software.
