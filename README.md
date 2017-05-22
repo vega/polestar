@@ -1,5 +1,8 @@
 # Pole✭ (Polestar) -- Alpha
 
+**WE NO LONGER PLAN TO MAINTAIN THIS PROJECT. PLEASE FOLLOW THE NEW VERSION OF [VOYAGER](https://github.com/vega/voyager) PROJECT WHICH SUPPORT ALL INTERACTIONS IN POLESTAR**TH
+
+
 [![Build Status](https://travis-ci.org/vega/polestar.svg)](https://travis-ci.org/vega/polestar)
 
 PoleStar is Tableau-style User Interface for visual analysis, building on top
