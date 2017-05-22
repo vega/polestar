@@ -1,7 +1,6 @@
 # Pole✭ (Polestar) -- Alpha
 
-**WE NO LONGER PLAN TO MAINTAIN THIS PROJECT. PLEASE FOLLOW THE NEW VERSION OF [VOYAGER](https://github.com/vega/voyager) PROJECT WHICH SUPPORT ALL INTERACTIONS IN POLESTAR**TH
-
+**WE NO LONGER PLAN TO MAINTAIN THIS PROJECT. PLEASE FOLLOW THE NEW VERSION OF [VOYAGER](https://github.com/vega/voyager) WHICH SUPPORTS ALL INTERACTIONS IN POLESTAR**
 
 [![Build Status](https://travis-ci.org/vega/polestar.svg)](https://travis-ci.org/vega/polestar)
 
